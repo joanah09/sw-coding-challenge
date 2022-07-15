@@ -3,9 +3,6 @@
     background-color: $bg-white;
     border-radius: 15px;
     margin: 2em auto;
-    // @include bp(desk) {
-    //     max-width: 1280px;
-    // }
     &_details {
        @extend .flex;
        justify-content: left;
