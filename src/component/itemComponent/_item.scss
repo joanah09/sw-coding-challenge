@@ -1,0 +1,68 @@
+.item {
+    max-width: 600px;
+    background-color: $bg-white;
+    border-radius: 15px;
+    margin: 2em auto;
+    // @include bp(desk) {
+    //     max-width: 1280px;
+    // }
+    &_details {
+       @extend .flex;
+       justify-content: left;
+        padding: 20px;
+    }
+    &_product-image {
+        position: relative;
+        max-width: 210px;
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 7px;
+        }
+    }
+    &-percent {
+        position: absolute;
+        bottom: 8px;
+        right: 7px;
+        padding: 9px 14px;
+        background-color: $bg-sale;
+        color: $bg-white;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    &-overview {
+        width: 100%;
+        max-width: 315px;
+        padding-left: 2em;
+        &-title {
+            h3 {
+            }
+        }
+        &-count {
+            width: calc(100% / 2.5);
+            border: 1px solid $border;
+            border-radius: 6px;
+            @extend .flex;
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            p {
+                width: calc(100% / 2.5);
+                text-align: center;
+            }
+        }
+        &-details {
+            padding-top: 20px;
+            &-sale-price {
+                padding-right: 20px;
+                font-size: 18px;
+            }
+            &-price {
+                font-size: 16px;
+                color: $font-light-gray;
+            }
+        }
+    }
+}
