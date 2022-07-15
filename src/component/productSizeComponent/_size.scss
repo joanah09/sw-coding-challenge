@@ -58,5 +58,6 @@
 
     .active {
         border: 1px solid $font-black;
+        transition: 0.3s;
     }
 }

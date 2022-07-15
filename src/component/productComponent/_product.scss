@@ -8,6 +8,9 @@
         padding: 0 20px;
         h2 {
             margin-right: auto;
+            @include bp(mob-sml) {
+                font-size: 18px;
+            }
         }
         a {
             text-decoration: none;
@@ -17,13 +20,16 @@
             &:hover {
                 color: $font-black;
             }
+            @include bp(mob-sml) {
+                font-size: 16px;
+            }
         }
     }
     &_list {
         display: flex;
         flex-wrap: wrap;
         padding: 0 20px;
-        @include bp(mob) {
+        @include bp(mob-sml) {
             justify-content: center;
         }
         @include bp(tab) {

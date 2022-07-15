@@ -5,12 +5,13 @@ function NotificationClose(props) {
     function remove() {
         setActive(!isActive)
         // setTimeout(() => {  
+        //     setActive(!isActive)
         //     console.log("test!"); 
-        // }, 300);
+        // }, 1000);
     }
 
-    // const style = {
-    //     opacity: isActive ? 1 : 0
+    // const styles = {
+    //     right: isActive ? "-999px" : "0"
     // }
 
     return (
@@ -24,8 +25,6 @@ function NotificationClose(props) {
                 <p>{props.description}</p>
                 
             </div>
-
-            
         }
         </>
     )

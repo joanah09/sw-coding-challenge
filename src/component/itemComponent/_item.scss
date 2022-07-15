@@ -39,6 +39,9 @@
             width: calc(100% / 2.5);
             border: 1px solid $border;
             border-radius: 6px;
+            @include bp(mob-sml) {
+                width: calc(100% / 1.2);
+            }
             @extend .flex;
             button {
                 background: none;
@@ -48,6 +51,7 @@
             p {
                 width: calc(100% / 2.5);
                 text-align: center;
+                
             }
         }
         &-details {

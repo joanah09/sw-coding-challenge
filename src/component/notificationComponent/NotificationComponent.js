@@ -23,19 +23,8 @@ function NotificationComponent() {
     };
     useEffect(() => getData(), []);
 
-    // function remove() {
-    //     let removeItem = document.querySelector(".notification_item")
-    //     let closeBtn = document.querySelector(".close-btn")
-        
-    //     if (closeBtn) {
-    //         closeBtn.addEventListener("click", () => {
-    //             removeItem.remove();
-    //             console.log("clicked")
-    //         })
-    //     }
-    //   }
 
-      const notification = user.slice(0, 5).map((item, id) => {
+      const notification = user.slice(0, 3).map((item, id) => {
         return <NotificationClose key={id} {...item} />    
     })
 
